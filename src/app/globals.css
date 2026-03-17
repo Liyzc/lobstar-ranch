@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700;800&display=swap');
+
+:root {
+  --ranch-green: #5D8C3E;
+  --ranch-brown: #8B5A2B;
+  --ranch-gold: #FFD700;
+}
+
+* {
+  image-rendering: pixelated;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(180deg, #87CEEB 0%, #E8F5E9 100%);
+  min-height: 100vh;
+}
+
+/* Pixel art style border */
+.pixel-border {
+  box-shadow: 
+    -4px 0 0 0 #5D8C3E,
+    4px 0 0 0 #5D8C3E,
+    0 -4px 0 0 #5D8C3E,
+    0 4px 0 0 #5D8C3E;
+  margin: 4px;
+}
+
+/* Stardew-style button */
+.ranch-btn {
+  @apply px-6 py-3 font-ranch font-bold text-white rounded-lg transition-all;
+  background: linear-gradient(180deg, #7CBA3D 0%, #5D8C3E 100%);
+  border: 3px solid #3A5A27;
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 4px 0 #3A5A27;
+}
+
+.ranch-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 6px 0 #3A5A27;
+}
+
+.ranch-btn:active {
+  transform: translateY(2px);
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 0 #3A5A27;
+}
+
+/* Card style */
+.ranch-card {
+  @apply bg-white rounded-xl overflow-hidden;
+  border: 4px solid #8B5A2B;
+  box-shadow: 0 6px 0 #6B4423;
+}
+
+/* Lobster animation */
+@keyframes lobster-wiggle {
+  0%, 100% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+}
+
+.lobster-wiggle {
+  animation: lobster-wiggle 2s ease-in-out infinite;
+}
+
+/* Grass pattern */
+.grass-pattern {
+  background-image: 
+    linear-gradient(135deg, #7CBA3D 25%, transparent 25%),
+    linear-gradient(225deg, #7CBA3D 25%, transparent 25%),
+    linear-gradient(45deg, #7CBA3D 25%, transparent 25%),
+    linear-gradient(315deg, #7CBA3D 25%, #5D8C3E 25%);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 0, 10px -10px, 0px 10px;
+}
