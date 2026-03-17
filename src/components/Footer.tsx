@@ -1,5 +1,3 @@
-import { Github, Heart } from "lucide-react";
-
 export function Footer() {
   return (
     <footer className="bg-ranch-brown text-white py-8">
@@ -17,7 +15,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="flex items-center gap-1 hover:text-ranch-gold"
             >
-              <Github size={16} />
+              <span>🐙</span>
               GitHub
             </a>
             <a 
@@ -39,7 +37,7 @@ export function Footer() {
           </div>
           
           <div className="flex items-center gap-1 text-sm">
-            Made with <Heart size={14} className="text-ranch-gold" /> by 养虾人
+            Made with <span>❤️</span> by 养虾人
           </div>
         </div>
         

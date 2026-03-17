@@ -1,10 +1,8 @@
-import { Rss } from "lucide-react";
-
 export default function NewsPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
       <div className="text-center mb-12">
-        <Rss size={48} className="mx-auto mb-4 text-ranch-green" />
+        <span className="text-5xl block mb-4">📰</span>
         <h1 className="font-pixel text-xl mb-4 text-ranch-brown">新闻动态</h1>
         <p className="text-gray-600">OpenClaw 最新资讯一网打尽</p>
       </div>

@@ -1,15 +1,13 @@
-import { Sparkles, Search } from "lucide-react";
-
 export default function SkillsPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
       <div className="text-center mb-12">
-        <Sparkles size={48} className="mx-auto mb-4 text-ranch-gold" />
+        <span className="text-5xl block mb-4">✨</span>
         <h1 className="font-pixel text-xl mb-4 text-ranch-brown">技能库</h1>
         <p className="text-gray-600 mb-6">5,400+ OpenClaw Skills 正在整理中...</p>
         
         <div className="max-w-md mx-auto relative">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
+          <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">🔍</span>
           <input 
             type="text"
             placeholder="搜索技能..."

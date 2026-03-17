@@ -1,10 +1,8 @@
-import { Users, MessageCircle, Gift, Trophy, Star } from "lucide-react";
-
 export default function CommunityPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
       <div className="text-center mb-12">
-        <Users size={48} className="mx-auto mb-4 text-ranch-brown" />
+        <span className="text-5xl block mb-4">👥</span>
         <h1 className="font-pixel text-xl mb-4 text-ranch-brown">社区中心</h1>
         <p className="text-gray-600">养虾人的星露谷乐园 🦀🌻</p>
       </div>
@@ -12,7 +10,7 @@ export default function CommunityPage() {
       {/* User Levels */}
       <div className="mb-12">
         <h2 className="font-ranch font-bold text-lg text-ranch-brown-dark mb-6 flex items-center gap-2">
-          <Trophy size={20} className="text-ranch-gold" />
+          <span>🏆</span>
           社区等级
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -26,17 +24,17 @@ export default function CommunityPage() {
       {/* Community Features */}
       <div className="grid md:grid-cols-3 gap-6 mb-12">
         <FeatureBox 
-          icon={<MessageCircle className="text-ranch-green" size={24} />}
+          icon={<span className="text-2xl">💬</span>}
           title="交流论坛"
           description="发帖讨论、问答互助"
         />
         <FeatureBox 
-          icon={<Gift className="text-red-500" size={24} />}
+          icon={<span className="text-2xl">🎁</span>}
           title="领养龙虾"
           description="创建你的宠物龙虾"
         />
         <FeatureBox 
-          icon={<Star className="text-ranch-gold" size={24} />}
+          icon={<span className="text-2xl">⭐</span>}
           title="成就系统"
           description="完成任务获得奖励"
         />

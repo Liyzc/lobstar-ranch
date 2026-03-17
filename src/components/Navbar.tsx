@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Menu } from "lucide-react";
 
 export function Navbar() {
   return (
@@ -22,7 +21,7 @@ export function Navbar() {
           
           {/* Mobile Menu Button */}
           <button className="md:hidden p-2">
-            <Menu size={24} />
+            <span className="text-2xl">☰</span>
           </button>
         </div>
       </div>

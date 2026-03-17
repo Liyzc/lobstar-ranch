@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Ghost, Github, Book, Users, Rss, Sparkles } from "lucide-react";
 
 export default function Home() {
   return (
@@ -94,17 +93,17 @@ export default function Home() {
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <FeatureCard 
-              icon={<Ghost className="text-ranch-gold" size={40} />}
+              icon={<span className="text-4xl">🦀</span>}
               title="宠物龙虾"
               description="领养你的专属小龙虾，学习如何接入 OpenClaw 作为你的智能宠物～"
             />
             <FeatureCard 
-              icon={<Book className="text-ranch-green" size={40} />}
+              icon={<span className="text-4xl">📖</span>}
               title="安装指南"
               description="详细的安装教程，涵盖 macOS、Linux、Windows 和 Docker 全平台～"
             />
             <FeatureCard 
-              icon={<Users className="text-ranch-brown" size={40} />}
+              icon={<span className="text-4xl">👥</span>}
               title="交流社区"
               description="和其他养虾人一起交流经验，分享你的 OpenClaw 使用技巧～"
             />
@@ -115,7 +114,7 @@ export default function Home() {
       {/* GitHub CTA */}
       <section className="py-16 px-4 bg-ranch-green/10">
         <div className="max-w-2xl mx-auto text-center">
-          <Github size={48} className="mx-auto mb-6 text-ranch-brown" />
+          <span className="text-5xl block mb-6">🐙</span>
           <h2 className="font-pixel text-lg mb-4 text-ranch-brown">开源项目</h2>
           <p className="text-gray-700 mb-6">
             Lobstar Ranch 也是开源的！欢迎 Star、Issue、Pull Request～

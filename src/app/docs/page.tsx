@@ -1,35 +1,33 @@
-import { Book, Terminal, Monitor, Cloud } from "lucide-react";
-
 export default function DocsPage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
       <div className="text-center mb-12">
-        <Book size={48} className="mx-auto mb-4 text-ranch-green" />
+        <span className="text-5xl block mb-4">📖</span>
         <h1 className="font-pixel text-xl mb-4 text-ranch-brown">安装指南</h1>
         <p className="text-gray-600">选择你的平台开始安装 OpenClaw</p>
       </div>
       
       <div className="grid md:grid-cols-2 gap-6">
         <InstallCard 
-          icon={<Monitor className="text-blue-500" size={32} />}
+          icon={<span className="text-3xl">🍎</span>}
           title="macOS"
           description="通过 Homebrew 或安装包安装"
           platforms={['brew', 'dmg', 'npm']}
         />
         <InstallCard 
-          icon={<Terminal className="text-green-500" size={32} />}
+          icon={<span className="text-3xl">🐧</span>}
           title="Linux"
           description="支持 Ubuntu、Debian、Arch 等"
           platforms={['apt', 'yum', 'aur']}
         />
         <InstallCard 
-          icon={<Monitor className="text-blue-400" size={32} />}
+          icon={<span className="text-3xl">🪟</span>}
           title="Windows"
           description="通过 WSL 或直接运行"
           platforms={['wsl', 'exe', 'docker']}
         />
         <InstallCard 
-          icon={<Cloud className="text-purple-500" size={32} />}
+          icon={<span className="text-3xl">🐳</span>}
           title="Docker"
           description="容器化部署，适合服务器"
           platforms={['docker', 'docker-compose']}
