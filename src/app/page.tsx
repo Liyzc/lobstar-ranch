@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Lobster, Github, Book, Users, Rss, Sparkles } from "lucide-react";
+import { Ghost, Github, Book, Users, Rss, Sparkles } from "lucide-react";
 
 export default function Home() {
   return (
@@ -94,7 +94,7 @@ export default function Home() {
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <FeatureCard 
-              icon={<Lobster className="text-ranch-gold" size={40} />}
+              icon={<Ghost className="text-ranch-gold" size={40} />}
               title="宠物龙虾"
               description="领养你的专属小龙虾，学习如何接入 OpenClaw 作为你的智能宠物～"
             />
