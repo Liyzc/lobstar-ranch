@@ -34,20 +34,16 @@ export default function Home() {
           
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/news" className="ranch-btn flex items-center gap-2">
-              <Rss size={20} />
-              最新动态
+              📡 最新动态
             </Link>
             <Link href="/skills" className="ranch-btn flex items-center gap-2">
-              <Sparkles size={20} />
-              技能库
+              ✨ 技能库
             </Link>
             <Link href="/docs" className="ranch-btn flex items-center gap-2">
-              <Book size={20} />
-              安装指南
+              📖 安装指南
             </Link>
             <Link href="/community" className="ranch-btn flex items-center gap-2">
-              <Users size={20} />
-              社区
+              👥 社区
             </Link>
           </div>
         </div>
@@ -125,8 +121,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="ranch-btn inline-flex items-center gap-2"
           >
-            <Github size={20} />
-            访问仓库
+            🐙 访问仓库
           </a>
         </div>
       </section>
